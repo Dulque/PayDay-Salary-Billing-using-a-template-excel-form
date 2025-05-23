@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('photos/pexels-karolina-grabowska-4475523.jpg');
+    background-size: cover;
+    background-position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: #0f0e0e;
+
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+
+
+}
+
+.login-container {
+
+background: rgba(247, 246, 246, 0.9);
+
+padding: 3rem;
+margin: 5%;
+border-radius: 15px;
+
+box-shadow: 0 4px 150px rgba(0, 0, 0, 0.4);
+
+width: 100%;
+
+max-width: 400px;
+
+text-align: center;
+
+}
+
+
+
+/* Login Box */
+
+.login-box h1 {
+
+margin-bottom: 1.5rem;
+
+font-size: 2rem;
+
+color: #444;
+
+}
+
+
+
+/* Role Switch Buttons */
+
+.role-switch {
+
+display: flex;
+
+justify-content: center;
+
+margin-bottom: 1.5rem;
+
+}
+
+
+
+.role-switch button {
+
+background: #f1f1f1;
+
+border: none;
+
+padding: 0.5rem 1.5rem;
+
+margin: 0 0.5rem;
+
+border-radius: 20px;
+
+cursor: pointer;
+
+font-size: 1rem;
+
+transition: background 0.3s ease;
+
+}
+
+
+
+.role-switch button.active {
+
+background: #667eea;
+
+color: white;
+
+}
+
+
+
+.role-switch button:hover {
+
+background: #667eea;
+
+color: white;
+
+}
+
+
+
+/* Input Fields */
+
+.input-group {
+
+margin-bottom: 1.5rem;
+
+text-align: left;
+
+}
+
+
+
+.input-group label {
+
+display: block;
+
+margin-bottom: 0.5rem;
+
+font-weight: bold;
+
+}
+
+
+
+.input-group input {
+
+width: 100%;
+
+padding: 0.75rem;
+
+border: 1px solid #ccc;
+
+border-radius: 5px;
+
+
+font-size: 1rem;
+
+}
+
+
+
+/* Login Button */
+
+button[type="submit"] {
+
+width: 100%;
+
+padding: 0.75rem;
+
+background: #667eea;
+
+border: none;
+
+border-radius: 5px;
+
+color: white;
+
+font-size: 1rem;
+
+cursor: pointer;
+
+transition: background 0.3s ease;
+
+}
+
+
+
+button[type="submit"]:hover {
+
+background: #555;
+
+}
+
+.leave-container {
+
+    background: #fff;
+    
+    padding: 30px;
+
+    margin: 5%;
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    
+    width: 600px;
+    
+    text-align: center;
+    
+    }
+    
+    
+    
+    .leave-container h1 {
+    
+    margin-bottom: 20px;
+    
+    font-size: 24px;
+    
+    color: #444;
+    
+    }
+    
+    
+    
+    /* Leave Details */
+    
+    .leave-details {
+    
+    display: flex;
+    
+    flex-direction: column;
+    
+    margin-bottom: 20px;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    
+    overflow: hidden;
+    
+    }
+    
+    
+    
+    .leave-row {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    padding: 10px;
+    
+    border-bottom: 1px solid #ccc;
+    
+    }
+    
+    
+    
+    .leave-row.header {
+    
+    background: #f9f9f9;
+    
+    font-weight: bold;
+    
+    }
+    
+    
+    
+    .leave-row:last-child {
+    
+    border-bottom: none;
+    
+    }
+    
+    
+    
+    .leave-type, .taken, .max {
+    
+    flex: 1;
+    
+    text-align: center;
+    
+    }
+    
+    
+    
+    .leave-type {
+    
+    text-align: left;
+    
+    }
+    
+    
+    
+    .taken input, .max input {
+    
+    width: 50px;
+    
+    text-align: center;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 3px;
+    
+    padding: 5px;
+    
+    }
+    
+    
+    
+    /* Form Group */
+    
+    .form-group {
+    
+    margin-bottom: 15px;
+    
+    text-align: left;
+    
+    }
+    
+    
+    
+    .form-group label {
+    
+    display: block;
+    
+    margin-bottom: 5px;
+    
+    font-weight: bold;
+    
+    color: #040404;
+    
+    }
+    
+    
+    
+    .form-group input,
+    
+    .form-group select,
+    
+    .form-group textarea {
+    
+    width: 100%;
+    
+    padding: 10px;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 5px;
+    
+    font-size: 14px;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    
+    
+    .form-group textarea {
+    
+    resize: vertical;
+    
+    }
+    
+    
+    
+    /* Buttons */
+    
+    .buttons {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    margin-top: 20px;
+    
+    }
+    
+    
+    
+    .buttons button {
+    
+    padding: 12px 20px;
+    
+    border: none;
+    
+    border-radius: 5px;
+    
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    
+    transition: background 0.3s ease;
+    background: #667eea;
+    
+    color: #fff;
+    
+    }
+    
+    
+    
+    .buttons button[type="submit"] {
+    
+    background: #667eea;
+    
+    color: #fff;
+    
+    }
+    
+    
+    
+    .buttons button[type="submit"]:hover {
+    
+    background: #764ba2;
+    
+    }
+    
+    
+    
+    .buttons button#requestHistoryBtn {
+      
+        background: #667eea;
+    
+        color: #fff;
+    
+    }
+    
+    
+    
+    .buttons button#requestHistoryBtn:hover {
+    
+    background: #ddd;
+    
+    }
+    
+    
